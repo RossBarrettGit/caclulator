@@ -1,46 +1,40 @@
-<html>
-    <head>
-        <title> Ross Barrett </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-            <div class="banner">
-                
-                <div class = "navbar">
-                    <img src ="logo.png" class="logo">
-                    
-                    <ul>
-                        <li> <a href="https://github.com/RossBarrettGit">GITHUB</a></li>
-                        <li> <a href="https://leetcode.com/GraniteKoala/">LEETCODE</a></li>
-                    </ul>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="display" id="display" disabled />
+    <div class="buttons">
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="deleteLast()">DEL</button>
+      <button class="btn" onclick="appendValue('/')">÷</button>
+      <button class="btn" onclick="appendValue('*')">×</button>
 
+      <button class="btn" onclick="appendValue('7')">7</button>
+      <button class="btn" onclick="appendValue('8')">8</button>
+      <button class="btn" onclick="appendValue('9')">9</button>
+      <button class="btn" onclick="appendValue('-')">−</button>
 
+      <button class="btn" onclick="appendValue('4')">4</button>
+      <button class="btn" onclick="appendValue('5')">5</button>
+      <button class="btn" onclick="appendValue('6')">6</button>
+      <button class="btn" onclick="appendValue('+')">+</button>
 
-                <div class="content">
-                    <h1> Ross Barrett </h1>
-                    <p> Student Software Developer <br> Studying at the University of Melbourne </p>
-                    
-                    <div>
-                        <button type = "button" onclick="location.href='https://study.unimelb.edu.au/'"><span></span> UNIMELB </button>
-                        <button type = "button" onclick="location.href='https://study.unimelb.edu.au/find/courses/major/computing-and-software-systems/'"><span></span> MAJOR </button>
-                    </div>
-                    <div style = "position:relative; top: 100px;">
-                        <p> Scroll :) </p>
-                        <img src ="arrow.jpg" class="logo">
-                    </div>
+      <button class="btn" onclick="appendValue('1')">1</button>
+      <button class="btn" onclick="appendValue('2')">2</button>
+      <button class="btn" onclick="appendValue('3')">3</button>
+      <button class="btn equal" onclick="calculate()">=</button>
 
-                </div>
-                
-                <div class = "my_video">
-                    <iframe style="border: 3px solid #2c709c;" width="896" height="504" src="https://www.youtube.com/embed/ApNVc2B8yAc?si=9nJd3Sh29D-82mam" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+      <button class="btn zero" onclick="appendValue('0')">0</button>
+      <button class="btn" onclick="appendValue('.')">.</button>
+    </div>
+  </div>
 
-                <div class = "bottom-left-navbar">
-                    <ul>
-                        <li> <a href="https://unsplash.com/@pawel_czerwinski">background by Pawel Czerwinski on Unsplash</a></li>
-                    </ul>
-                </div>
-    </body>
+  <script src="script.js"></script>
+</body>
 </html>
