@@ -8,6 +8,21 @@ body {
     height: 100vh;
     margin: 0;
   }
+
+  .home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff5f1f;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    z-index: 2;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.4); 
+  }
   
   .calculator {
     background-color: #FF5F1F;

@@ -20,4 +20,8 @@ function appendValue(value) {
       display.value = "Error";
     }
   }
+
+  function home(){
+    window.location.href = "https://rossbarrettgit.github.io/home-webpage/";
+  }
   
